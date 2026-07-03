@@ -4,6 +4,8 @@
 
 Quick setup guide to get Argonaut running on your machine.
 
+The tested deployment is also available at [here](https://argonautsim-382548405389.us-central1.run.app/). More details of Argonaut can be found [here](https://github.com/TDI-Lab/Argonaut-Documentation).
+
 ---
 
 ## 🚀 Quick Start
