@@ -4,7 +4,7 @@
 
 Quick setup guide to get Argonaut running on your machine.
 
-The tested deployment is also available at [cloud hosted service](https://argonautsim-382548405389.us-central1.run.app/). More details of Argonaut can be found at [documentation] (https://6a47c1531e252e88b95051d0--euphonious-platypus-7927ca.netlify.app/)
+The tested deployment is also available at [cloud hosted service](https://argonautsim-382548405389.us-central1.run.app/). More details of Argonaut can be found at [documentation](https://6a47c1531e252e88b95051d0--euphonious-platypus-7927ca.netlify.app/)
 and github source for the documents [here](https://github.com/TDI-Lab/Argonaut-Documentation).
 
 ---
