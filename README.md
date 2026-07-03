@@ -1,173 +1,113 @@
-# I-EPOS Web Interface
+# Argonaut
 
-A full-stack web application for running and visualising the **I-EPOS** (Iterative Economic Planning and Optimised Selection) algorithm and a **Brute Force** exhaustive search, with interactive result visualisations.
+> 🌐 **Runs on localhost** — once setup is complete, the app opens on your local machine. Just click the link that appears in your terminal and it'll open in your browser, running locally on your machine.
 
----
-
-## Project Structure
-
-```
-EPOS-Source-Code/
-├── src/                           # Java source for the EPOS algorithm (Maven)
-├── backend/                       # Spring Boot REST API
-│   ├── src/
-│   └── pom.xml
-├── frontend/                      # React + Vite web UI
-│   ├── src/
-│   │   ├── components/            # UI components (ResultsPanel, PlanViewer, …)
-│   │   └── visualizer/            # EPOS interactive visualiser (D3)
-│   └── vite.config.js
-├── mathematical_way/              # Brute-force Python simulation
-│   ├── code.py                    # Core brute-force + EPOS simulation
-│   ├── run_experiment.py          # Orchestrator called by the backend
-│   ├── brute_force_visualizer.py  # Generates concentric-circle PNGs
-│   └── epos_utils.py
-├── scripts/
-│   └── generate_viz_data.py       # Converts EPOS output → experiments.json
-├── Privacy_6agents/               # Built-in privacy dataset (.plans files)
-├── backend/Dockerfile             # Multi-stage Docker build (backend)
-└── frontend/Dockerfile            # Multi-stage Docker build (frontend)
-```
+Quick setup guide to get Argonaut running on your machine.
 
 ---
 
-## Prerequisites
+## 🚀 Quick Start
 
-| Tool | Version | Purpose |
-|------|---------|---------|
-| Java JDK | 17 | Build & run EPOS + Spring Boot |
-| Maven | 3.9+ | Build Java projects |
-| Node.js | 18+ | Build & run the frontend |
-| Python | 3.9+ | Brute-force simulation & visualisation |
+> **4 quick steps** — pick your operating system below and follow along.
+>
+> 📥 Getting the code will take about **a minute**. Running the remaining steps should take **no more than 5 minutes**.
 
-Install Python dependencies:
+### 📦 Get the Code
+
+**Option A — Clone with Git**
 ```bash
-pip install numpy pandas matplotlib
+git clone https://github.com/TDI-Lab/Argonaut.git
+cd Argonaut
 ```
+
+**Option B — Download the ZIP**
+
+Download it directly from [github.com/TDI-Lab/Argonaut](https://github.com/TDI-Lab/Argonaut) → **Code → Download ZIP**, then extract it and open a terminal in that folder.
 
 ---
 
-## Running Locally
+### 🍎 macOS
 
-### 1 — Build the EPOS JAR (root project)
-
+> **Step 1 — Install Homebrew** *(this is the command to install Homebrew, the macOS package manager)*
 ```bash
-# From the repo root
-mvn package -DskipTests
-# Produces: target/tutorial-0.0.1.jar
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-### 2 — Build & start the backend
-
+> **Step 2 — Install dependencies**
 ```bash
-cd backend
-mvn package -DskipTests
-# Produces: target/epos-api-1.0.0.jar
-
-# Set the path to the EPOS fat JAR, then start
-# macOS / Linux:
-export EPOS_JAR=../target/tutorial-0.0.1.jar
-# Windows PowerShell:
-# $env:EPOS_JAR = "..\target\tutorial-0.0.1.jar"
-
-java -jar target/epos-api-1.0.0.jar
-# Backend runs on http://localhost:8080
+brew install openjdk@17 maven node python git && pip3 install numpy pandas matplotlib
 ```
 
-### 3 — Start the frontend
-
+> **Step 3 — Make the quickstart script executable**
 ```bash
-cd frontend
-npm install
-npm run dev
-# Frontend runs on http://localhost:5173
+chmod +x quickstart.sh
 ```
 
-Vite proxies `/api` → `http://localhost:8080` automatically (configured in `vite.config.js`), so no extra configuration is needed for local development.
-
-Open **http://localhost:5173** in your browser.
-
----
-
-## Environment Variables
-
-### Backend
-
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `EPOS_JAR` | *(required)* | Absolute path to `tutorial-0.0.1.jar` |
-| `SERVER_PORT` | `8080` | HTTP port |
-
-### Frontend (build-time only)
-
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `VITE_API_URL` | `/api` | Backend API base URL. Only set this when the frontend is served separately (e.g. Docker / Cloud Run). For local dev the Vite proxy handles routing automatically. |
-
----
-
-## Key API Endpoints
-
-| Method | Path | Description |
-|--------|------|-------------|
-| `POST` | `/api/run` | Submit a job (multipart: `.plans` files + config params) |
-| `GET` | `/api/status/{jobId}` | Poll job status: `RUNNING` / `COMPLETED` / `FAILED` |
-| `GET` | `/api/results/{jobId}` | Fetch result CSVs and summary JSON |
-| `GET` | `/api/results/{jobId}/viz-data` | `experiments.json` for the I-EPOS visualiser |
-| `GET` | `/api/results/{jobId}/bf-images` | List brute-force PNG filenames |
-| `GET` | `/api/results/{jobId}/bf-images/{file}` | Serve a brute-force visualisation PNG |
-| `GET` | `/api/dataset/privacy` | Built-in Privacy dataset as parsed JSON |
-
----
-
-## Features
-
-- **I-EPOS algorithm** — upload `.plans` files, configure iterations / alpha / beta / cost functions, view convergence charts and an interactive radial tree visualiser.
-- **Brute Force** — exhaustive search over all plan combinations; generates concentric-circle iteration PNGs viewable in-browser.
-- **Privacy dataset** — built-in 6-agent dataset, no upload needed. Individual agents can be removed before running.
-- **Plan Editor** — inspect and edit agent plans in a scrollable table before submitting.
-
----
-
-## Making UI / Aesthetic Changes
-
-All visual code lives in the frontend:
-
+> **Step 4 — Run it**
+```bash
+./quickstart.sh
 ```
-frontend/src/
-├── App.jsx               # Top-level layout and state
-├── App.css               # Global styles and CSS variables (colours, spacing, radius)
-└── components/
-    ├── ResultsPanel.jsx  # Results display (summary cards, downloads, visualiser button)
-        └── PlanViewer.jsx    # Plan editor table with agent tabs
-        ```
 
-        **CSS variables** are defined at the top of `App.css` — colours, border radius, and spacing can all be changed there without touching component code. The frontend hot-reloads automatically during `npm run dev`.
+---
 
-        ---
+### 🐧 Linux (Debian/Ubuntu)
 
-        ## Deploying to Google Cloud Run
+> **Step 1 — Install dependencies**
+```bash
+sudo apt update && sudo apt install -y openjdk-17-jdk maven git python3 python3-pip python3-numpy python3-pandas python3-matplotlib && curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt install -y nodejs
+```
 
-        See [`DEPLOY.md`](DEPLOY.md) for full deployment instructions.
+> **Step 2 — Make the quickstart script executable**
+```bash
+chmod +x quickstart.sh
+```
 
-        Quick summary (requires Docker + `gcloud` CLI authenticated to project `epos-2026`):
+> **Step 3 — Run it**
+```bash
+./quickstart.sh
+```
 
-        ```bash
-        PROJECT="epos-2026"
-        REGION="us-central1"
-        REPO="us-central1-docker.pkg.dev/$PROJECT/epos-repo"
-        BACKEND_URL="https://epos-backend-382548405389.us-central1.run.app"
+---
 
-        # --- Backend ---
-        docker build -f backend/Dockerfile -t $REPO/epos-backend:latest .
-        docker push $REPO/epos-backend:latest
-        gcloud run deploy epos-backend --image=$REPO/epos-backend:latest --region=$REGION
+### 🪟 Windows
 
-        # --- Frontend ---
-        cd frontend
-        docker build -t $REPO/epos-frontend:latest \
-          --build-arg VITE_API_URL=$BACKEND_URL/api .
-          docker push $REPO/epos-frontend:latest
-          gcloud run deploy epos-frontend --image=$REPO/epos-frontend:latest --region=$REGION
-          ```
-          
+> **Step 1 — Download the packages**
+```powershell
+winget install --id EclipseAdoptium.Temurin.17.JDK -e
+winget install --id OpenJS.NodeJS.LTS -e
+winget install --id Python.Python.3.12 -e
+```
+
+> **Step 2 — Run in PowerShell**
+```powershell
+Set-ExecutionPolicy -Scope Process Bypass -Force
+.\quickstart.ps1
+```
+
+> **Step 3 — Stop the run in PowerShell**
+```powershell
+Set-ExecutionPolicy -Scope Process Bypass -Force
+.\stop-windows.ps1
+```
+
+---
+
+> 🌐 **Note:** Once `quickstart` finishes running, it will start a **local host** server. Click the link shown in your terminal to open Argonaut in your browser — it runs entirely on your local machine.
+
+## 📋 Requirements
+
+| Tool | Version |
+|------|---------|
+| Java (OpenJDK) | 17+ |
+| Maven | Latest |
+| Node.js | Latest LTS |
+| Python | 3.x |
+| Git | Latest |
+
+## 🛠 Troubleshooting
+
+If you run into issues during setup, please [open an issue](https://github.com/TDI-Lab/Argonaut/issues) in this repository.
+
+---
+
+<p align="center">Made with ❤️ by TDI-Lab</p>
