@@ -1,0 +1,385 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  gap: 12px;
+  padding: 12px 16px 8px;
+  min-height: 0;
+}
+
+.treeArea {
+  flex: 1;
+  display: flex;
+  min-width: 0;
+  border-radius: var(--radius-md);
+}
+
+.treeAreaSplit {
+  gap: 8px;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.treeHalf {
+  flex: 1;
+  min-width: 0;
+  border-radius: var(--radius-md);
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.treeDivider {
+  width: 2px;
+  background: var(--border-glass);
+  margin: 20px 0;
+  flex-shrink: 0;
+}
+
+.treeBadge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: var(--surface-glass);
+  border: 1px solid var(--border-glass);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}
+.badgeA {
+  color: var(--accent);
+}
+.badgeB {
+  color: var(--accent-light);
+}
+
+.sidebar {
+  width: 300px;
+  flex-shrink: 0;
+  border-radius: var(--radius-md);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+}
+
+.sidebarWide {
+  width: 440px;
+}
+
+.sidebarIterSection {
+  padding: 0 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebarIterSection :global(.glass) {
+  background: rgba(0, 0, 0, 0.12);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  padding: 10px 14px;
+}
+
+.footer {
+  display: flex;
+  gap: 12px;
+  padding: 0 16px 12px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.convergenceSection {
+  display: flex;
+  gap: 12px;
+  flex: 1.2;
+  min-width: 0;
+  min-height: 0;
+}
+
+.convergenceLeft {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: var(--bg-glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.convergenceDropdown {
+  padding: 10px 14px 6px;
+  flex-shrink: 0;
+}
+
+.convergenceDropdown select {
+  width: 100%;
+}
+
+.convergenceChart {
+  flex: 1;
+  min-height: 0;
+}
+
+.convergenceChart :global(.glass) {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  border-radius: 0;
+}
+
+.convergenceRight {
+  flex: 1;
+  min-width: 0;
+}
+
+.chartArea {
+  flex: 1.8;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  gap: 16px;
+}
+
+.vectorChartContainer {
+  flex: 1.4;
+  min-width: 0;
+}
+
+.localCostChartContainer {
+  flex: 1.0;
+  min-width: 0;
+}
+
+/* ---- Sidebar ---- */
+.sidebarContent {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebarEmpty {
+  padding: 24px 16px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.sidebarTitle {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+.sidebarDivider {
+  height: 1px;
+  background: var(--border-glass);
+}
+.sidebarNote {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px 12px;
+}
+.infoLabel {
+  font-size: 11px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.infoValue {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.infoAccent {
+  color: var(--accent);
+}
+.infoAccentTeal {
+  color: var(--accent-light);
+}
+.infoSmall {
+  font-size: 10px;
+  word-break: break-all;
+}
+
+.weightBars {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.weightRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.weightLabel {
+  font-size: 10px;
+  color: var(--text-muted);
+  width: 50px;
+  flex-shrink: 0;
+}
+.weightTrack {
+  flex: 1;
+  height: 5px;
+  background: var(--border-glass);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.weightFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+.weightVal {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  width: 22px;
+  text-align: right;
+}
+
+/* ---- Full-screen states ---- */
+.fullScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 14px;
+  color: var(--text-secondary);
+}
+.loadingSpinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--border-glass);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.errorIcon {
+  font-size: 36px;
+  color: var(--danger);
+}
+
+/* ---- Agent Plans Table ---- */
+.agentTableContainer {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-sm);
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.agentTableHeader {
+  display: grid;
+  grid-template-columns: 48px 1fr 60px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--border-glass);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.tableHeaderSplit {
+  grid-template-columns: 48px 1fr 1fr 60px 60px;
+}
+
+.agentTableBody {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.agentTableRow {
+  display: grid;
+  grid-template-columns: 48px 1fr 60px;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  transition: background 0.2s ease;
+}
+
+.tableRowSplit {
+  grid-template-columns: 48px 1fr 1fr 60px 60px;
+}
+
+.rowChanged {
+  background: rgba(104, 143, 78, 0.15);
+  border-left: 2px solid var(--accent);
+  padding-left: 10px;
+}
+
+.agentTableRow:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.agentTableRow:last-child {
+  border-bottom: none;
+}
+
+.agentId {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.agentPlan {
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 8px;
+}
+
+.agentCost {
+  color: var(--accent);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Split Compare Consistency Colors */
+.headerA,
+.planA,
+.costA {
+  color: var(--accent) !important;
+}
+
+.headerB,
+.planB,
+.costB {
+  color: var(--accent-light) !important;
+}

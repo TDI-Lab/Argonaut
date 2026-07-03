@@ -1,0 +1,181 @@
+/*
+ * visualizer.css
+ * Scoped CSS design tokens for the EPOS Visualizer overlay.
+ * Mirrors the variables in EPOS-Visualizer/src/index.css but scoped
+ * under .viz-scope so they don't bleed into the host app.
+ */
+
+.viz-scope {
+  --bg-base:        #192923;
+  --bg-surface:     #2b463c;
+  --bg-glass:       rgba(43, 70, 60, 0.72);
+  --bg-glass-hover: rgba(50, 82, 70, 0.85);
+  --border-glass:   rgba(255, 255, 255, 0.08);
+  --border-active:  rgba(104, 143, 78, 0.45);
+
+  --accent:         #688f4e;
+  --accent-light:   #8ab86f;
+  --accent-glow:    rgba(104, 143, 78, 0.35);
+  --accent-2:       #a3c98b;
+
+  --text-primary:   #ffffff;
+  --text-secondary: #dcedde;
+  --text-muted:     #a8c7b0;
+
+  --success:  #688f4e;
+  --warning:  #fbbf24;
+  --danger:   #e87373;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --transition: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  color: var(--text-primary);
+  background: var(--bg-base);
+  -webkit-font-smoothing: antialiased;
+
+  box-sizing: border-box;
+}
+
+.viz-scope *, .viz-scope *::before, .viz-scope *::after {
+  box-sizing: border-box;
+}
+
+/* Full-screen overlay */
+.viz-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 20% 0%,  rgba(104, 143, 78, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 100%, rgba(104, 143, 78, 0.08) 0%, transparent 60%),
+    var(--bg-base);
+}
+
+/* Close button floating top-right */
+.viz-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  z-index: 1100;
+  background: rgba(20, 23, 40, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e8eaf6;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.18s, border-color 0.18s;
+  font-family: inherit;
+}
+.viz-close-btn:hover {
+  background: rgba(104, 143, 78, 0.25);
+  border-color: rgba(104, 143, 78, 0.5);
+}
+
+/* ---- Replicate global utility classes from index.css ---- */
+.viz-scope .glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border-glass);
+}
+
+.viz-scope ::-webkit-scrollbar { width: 6px; height: 6px; }
+.viz-scope ::-webkit-scrollbar-track { background: transparent; }
+.viz-scope ::-webkit-scrollbar-thumb { background: var(--text-muted); border-radius: 3px; }
+
+.viz-scope select {
+  appearance: none;
+  background: rgba(20, 23, 40, 0.9) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238892b0' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 10px center;
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  padding: 7px 30px 7px 12px;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  min-width: 90px;
+}
+.viz-scope select:hover  { border-color: var(--accent-light); }
+.viz-scope select:focus  {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.viz-scope button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.viz-scope .seg-group {
+  display: flex;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-glass);
+  overflow: hidden;
+}
+.viz-scope .seg-btn {
+  padding: 7px 14px;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 500;
+  transition: all var(--transition);
+  white-space: nowrap;
+  border-right: 1px solid var(--border-glass);
+}
+.viz-scope .seg-btn:last-child { border-right: none; }
+.viz-scope .seg-btn.active {
+  background: var(--accent);
+  color: #fff;
+}
+.viz-scope .seg-btn:not(.active):hover {
+  background: var(--bg-glass-hover);
+  color: var(--text-primary);
+}
+
+.viz-scope .field-label {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 5px;
+}
+
+.viz-scope .tooltip {
+  position: absolute;
+  background: rgba(25, 41, 35, 0.96);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  font-size: 12px;
+  color: var(--text-primary);
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 100;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+.viz-offline-badge {
+  position: absolute;
+  top: 52px;
+  right: 22px;
+  z-index: 1100;
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  opacity: 0.85;
+  pointer-events: none;
+}

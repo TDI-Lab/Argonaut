@@ -1,0 +1,655 @@
+
+> epos-frontend@1.0.0 dev
+> vite
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+Re-optimizing dependencies because vite config has changed
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m1298[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m10:24:58 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[2m10:29:18 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[2m11:38:03 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ResultsPanel.jsx[22m
+[2m11:38:08 pm[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33mrecharts[32m[39m
+[2m11:38:08 pm[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[2m11:38:32 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ResultsPanel.jsx[22m
+[2m11:39:01 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/components/ResultsPanel.jsx[22m
+[2m11:45:19 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ResultsPanel.jsx[22m
+[2m11:46:45 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ResultsPanel.jsx[22m
+[2m12:20:33 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[2m12:20:34 am[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "d3" from "src/visualizer/components/LocalCostChart.jsx". Does the file exist?
+[2m12:20:34 am[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "d3" from "src/visualizer/components/MetricConvergenceChart.jsx". Does the file exist?
+[2m12:20:34 am[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "d3" from "src/visualizer/components/GlobalResponseChart.jsx". Does the file exist?
+[2m12:20:34 am[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "d3" from "src/visualizer/components/RadialTree.jsx". Does the file exist?
+[2m12:20:34 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/GlobalResponseChart.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/GlobalResponseChart.jsx[39m:2:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useEffect, useRef } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import styles from "./GlobalCostChart.module.css";
+  21 |  export default function GlobalResponseChart({ experiment, activeIterations }) {[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:20:34 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/MetricConvergenceChart.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/MetricConvergenceChart.jsx[39m:8:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useEffect, useRef, useState } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import styles from "./GlobalCostChart.module.css";
+  21 |  export default function MetricConvergenceChart({[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:20:34 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/LocalCostChart.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/LocalCostChart.jsx[39m:8:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useEffect, useRef, useState } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import styles from "./LocalCostChart.module.css";
+  21 |  export default function LocalCostChart({ experiment, activeIterations = [] }) {[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:20:34 am[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "d3" from "src/visualizer/utils/treeLayout.js". Does the file exist?
+[2m12:20:34 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/RadialTree.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/RadialTree.jsx[39m:18:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useRef, useEffect, useState, useCallback, useMemo } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import { computeRadialLayout, nodeRadius } from "../utils/treeLayout.js";
+  21 |  import styles from "./RadialTree.module.css";[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:20:34 am[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "d3" from "src/visualizer/utils/treeLayout.js". Does the file exist?
+[2m12:20:38 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[2m12:20:43 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[2m12:20:48 am[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/App.jsx.tmp.18508.3e2067094744[22m
+[2m12:20:48 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[2m12:20:48 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\src\App.jsx: Unexpected token, expected "," (195:6)
+
+[0m [90m 193 |[31m     [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 194 |[31m
+[31m[1m>[22m[31m[90m 195 |[31m       {showVisualizer [33m&&[31m jobId [33m&&[31m (
+ [90m     |[31m       [31m[1m^[22m[31m
+ [90m 196 |[31m         [33m<[31m[33mVisualizerApp[31m
+ [90m 197 |[31m           jobId[33m=[31m{jobId}
+ [90m 198 |[31m           onClose[33m=[31m{() [33m=>[31m setShowVisualizer([36mfalse[31m)}[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/App.jsx[39m:195:6
+[33m  193|      </div>
+  194|  
+  195|        {showVisualizer && jobId && (
+     |        ^
+  196|          <VisualizerApp
+  197|            jobId={jobId}[39m
+      at constructor (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:365:19)
+      at JSXParserMixin.raise (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:6616:19)
+      at JSXParserMixin.unexpected (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:6636:16)
+      at JSXParserMixin.expect (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:6916:12)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11678:14)
+      at JSXParserMixin.parseExprAtom (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10801:23)
+      at C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10797:39
+      at JSXParserMixin.allowInAnd (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12438:16)
+      at JSXParserMixin.parseExpression (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10797:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13159:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12815:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12764:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13333:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseBlock (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13314:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12117:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12103:10)
+      at C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13462:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12420:14)
+      at JSXParserMixin.parseFunction (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13461:10)
+      at JSXParserMixin.parseExportDefaultExpression (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13924:19)
+      at JSXParserMixin.parseExport (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13845:25)
+      at JSXParserMixin.parseStatementContent (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12895:27)
+      at JSXParserMixin.parseStatementLike (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseModuleItem (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12761:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13333:36)
+      at JSXParserMixin.parseBlockBody (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseProgram (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12639:10)
+      at JSXParserMixin.parseTopLevel (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12629:25)
+      at JSXParserMixin.parse (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:14505:25)
+      at parse (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\core\lib\transformation\normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\gensync\index.js:261:32)
+[2m12:20:49 am[22m [31m[1m[vite][22m[39m Pre-transform error: C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\src\App.jsx: Unexpected token, expected "," (195:6)
+
+[0m [90m 193 |[39m     [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m 194 |[39m
+[31m[1m>[22m[39m[90m 195 |[39m       {showVisualizer [33m&&[39m jobId [33m&&[39m (
+ [90m     |[39m       [31m[1m^[22m[39m
+ [90m 196 |[39m         [33m<[39m[33mVisualizerApp[39m
+ [90m 197 |[39m           jobId[33m=[39m{jobId}
+ [90m 198 |[39m           onClose[33m=[39m{() [33m=>[39m setShowVisualizer([36mfalse[39m)}[0m
+[2m12:20:49 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\src\App.jsx: Unexpected token, expected "," (195:6)
+
+[0m [90m 193 |[31m     [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 194 |[31m
+[31m[1m>[22m[31m[90m 195 |[31m       {showVisualizer [33m&&[31m jobId [33m&&[31m (
+ [90m     |[31m       [31m[1m^[22m[31m
+ [90m 196 |[31m         [33m<[31m[33mVisualizerApp[31m
+ [90m 197 |[31m           jobId[33m=[31m{jobId}
+ [90m 198 |[31m           onClose[33m=[31m{() [33m=>[31m setShowVisualizer([36mfalse[31m)}[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/App.jsx[39m:195:6
+[33m  193|      </div>
+  194|  
+  195|        {showVisualizer && jobId && (
+     |        ^
+  196|          <VisualizerApp
+  197|            jobId={jobId}[39m
+      at constructor (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:365:19)
+      at JSXParserMixin.raise (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:6616:19)
+      at JSXParserMixin.unexpected (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:6636:16)
+      at JSXParserMixin.expect (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:6916:12)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11678:14)
+      at JSXParserMixin.parseExprAtom (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10801:23)
+      at C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10797:39
+      at JSXParserMixin.allowInAnd (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12438:16)
+      at JSXParserMixin.parseExpression (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10797:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13159:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12815:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12764:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13333:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseBlock (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13314:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12117:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12103:10)
+      at C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13462:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12420:14)
+      at JSXParserMixin.parseFunction (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13461:10)
+      at JSXParserMixin.parseExportDefaultExpression (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13924:19)
+      at JSXParserMixin.parseExport (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13845:25)
+      at JSXParserMixin.parseStatementContent (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12895:27)
+      at JSXParserMixin.parseStatementLike (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseModuleItem (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12761:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13333:36)
+      at JSXParserMixin.parseBlockBody (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseProgram (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12639:10)
+      at JSXParserMixin.parseTopLevel (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12629:25)
+      at JSXParserMixin.parse (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:14505:25)
+      at parse (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\core\lib\transformation\normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\gensync\index.js:261:32)
+[2m12:21:00 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[2m12:21:00 am[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "d3" from "src/visualizer/components/MetricConvergenceChart.jsx". Does the file exist?
+[2m12:21:00 am[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "d3" from "src/visualizer/components/LocalCostChart.jsx". Does the file exist?
+[2m12:21:00 am[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "d3" from "src/visualizer/components/GlobalResponseChart.jsx". Does the file exist?
+[2m12:21:00 am[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "d3" from "src/visualizer/components/RadialTree.jsx". Does the file exist?
+[2m12:21:00 am[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "d3" from "src/visualizer/utils/treeLayout.js". Does the file exist?
+[2m12:21:01 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/MetricConvergenceChart.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/MetricConvergenceChart.jsx[39m:8:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useEffect, useRef, useState } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import styles from "./GlobalCostChart.module.css";
+  21 |  export default function MetricConvergenceChart({[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:21:01 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/LocalCostChart.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/LocalCostChart.jsx[39m:8:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useEffect, useRef, useState } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import styles from "./LocalCostChart.module.css";
+  21 |  export default function LocalCostChart({ experiment, activeIterations = [] }) {[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:21:01 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/GlobalResponseChart.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/GlobalResponseChart.jsx[39m:2:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useEffect, useRef } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import styles from "./GlobalCostChart.module.css";
+  21 |  export default function GlobalResponseChart({ experiment, activeIterations }) {[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:21:01 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/RadialTree.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/RadialTree.jsx[39m:18:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useRef, useEffect, useState, useCallback, useMemo } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import { computeRadialLayout, nodeRadius } from "../utils/treeLayout.js";
+  21 |  import styles from "./RadialTree.module.css";[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:21:01 am[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "d3" from "src/visualizer/utils/treeLayout.js". Does the file exist?
+[2m12:21:07 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[2m12:21:07 am[22m [31m[1m[vite][22m[39m Pre-transform error: C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\src\App.jsx: Unterminated JSX contents. (194:10)
+
+[0m [90m 192 |[39m         [33m<[39m[33m/[39m[33msection[39m[33m>[39m
+ [90m 193 |[39m       [33m<[39m[33m/[39m[33mmain[39m[33m>[39m
+[31m[1m>[22m[39m[90m 194 |[39m     [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m     |[39m           [31m[1m^[22m[39m
+ [90m 195 |[39m   )
+ [90m 196 |[39m }
+ [90m 197 |[39m[0m
+[2m12:21:07 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\src\App.jsx: Unterminated JSX contents. (194:10)
+
+[0m [90m 192 |[31m         [33m<[31m[33m/[31m[33msection[31m[33m>[31m
+ [90m 193 |[31m       [33m<[31m[33m/[31m[33mmain[31m[33m>[31m
+[31m[1m>[22m[31m[90m 194 |[31m     [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m     |[31m           [31m[1m^[22m[31m
+ [90m 195 |[31m   )
+ [90m 196 |[31m }
+ [90m 197 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/App.jsx[39m:194:10
+[33m  192|          </section>
+  193|        </main>
+  194|      </div>
+     |            ^
+  195|    )
+  196|  }[39m
+      at constructor (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:365:19)
+      at JSXParserMixin.raise (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:6616:19)
+      at JSXParserMixin.jsxReadToken (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:4460:20)
+      at JSXParserMixin.getTokenFromCode (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:4786:12)
+      at JSXParserMixin.nextToken (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:5799:10)
+      at JSXParserMixin.next (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:5709:10)
+      at JSXParserMixin.eat (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:5713:12)
+      at JSXParserMixin.expect (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:6915:15)
+      at JSXParserMixin.jsxParseClosingElementAt (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:4692:10)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:4707:37)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:4710:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10848:21)
+      at C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10817:39
+      at JSXParserMixin.allowInAnd (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12510:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11692:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10801:23)
+      at C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10797:39
+      at JSXParserMixin.allowInAnd (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12438:16)
+      at JSXParserMixin.parseExpression (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:10797:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13159:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12815:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12764:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13333:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseBlock (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13314:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12117:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12103:10)
+      at C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13462:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:12420:14)
+      at JSXParserMixin.parseFunction (C:\Users\Raj Shah\Downloads\Optimization_db\EPOS-Source-Code\frontend\node_modules\@babel\parser\lib\index.js:13461:10)
+[2m12:21:14 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[2m12:21:15 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/MetricConvergenceChart.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/MetricConvergenceChart.jsx[39m:8:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useEffect, useRef, useState } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import styles from "./GlobalCostChart.module.css";
+  21 |  export default function MetricConvergenceChart({[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:21:15 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/GlobalResponseChart.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/GlobalResponseChart.jsx[39m:2:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useEffect, useRef } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import styles from "./GlobalCostChart.module.css";
+  21 |  export default function GlobalResponseChart({ experiment, activeIterations }) {[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:21:15 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/LocalCostChart.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/LocalCostChart.jsx[39m:8:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useEffect, useRef, useState } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import styles from "./LocalCostChart.module.css";
+  21 |  export default function LocalCostChart({ experiment, activeIterations = [] }) {[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:21:15 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/RadialTree.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/RadialTree.jsx[39m:18:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useRef, useEffect, useState, useCallback, useMemo } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import { computeRadialLayout, nodeRadius } from "../utils/treeLayout.js";
+  21 |  import styles from "./RadialTree.module.css";[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:21:15 am[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "d3" from "src/visualizer/utils/treeLayout.js". Does the file exist?
+[2m12:22:59 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ResultsPanel.jsx[22m
+[2m12:22:59 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/MetricConvergenceChart.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/MetricConvergenceChart.jsx[39m:8:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useEffect, useRef, useState } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import styles from "./GlobalCostChart.module.css";
+  21 |  export default function MetricConvergenceChart({[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:22:59 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/GlobalResponseChart.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/GlobalResponseChart.jsx[39m:2:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useEffect, useRef } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import styles from "./GlobalCostChart.module.css";
+  21 |  export default function GlobalResponseChart({ experiment, activeIterations }) {[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:22:59 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/LocalCostChart.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/LocalCostChart.jsx[39m:8:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useEffect, useRef, useState } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import styles from "./LocalCostChart.module.css";
+  21 |  export default function LocalCostChart({ experiment, activeIterations = [] }) {[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:22:59 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/RadialTree.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/RadialTree.jsx[39m:18:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useRef, useEffect, useState, useCallback, useMemo } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import { computeRadialLayout, nodeRadius } from "../utils/treeLayout.js";
+  21 |  import styles from "./RadialTree.module.css";[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:22:59 am[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "d3" from "src/visualizer/utils/treeLayout.js". Does the file exist?
+[2m12:23:05 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.css[22m
+[2m12:23:06 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/MetricConvergenceChart.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/MetricConvergenceChart.jsx[39m:8:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useEffect, useRef, useState } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import styles from "./GlobalCostChart.module.css";
+  21 |  export default function MetricConvergenceChart({[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:23:06 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/GlobalResponseChart.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/GlobalResponseChart.jsx[39m:2:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useEffect, useRef } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import styles from "./GlobalCostChart.module.css";
+  21 |  export default function GlobalResponseChart({ experiment, activeIterations }) {[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:23:06 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/LocalCostChart.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/LocalCostChart.jsx[39m:8:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useEffect, useRef, useState } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import styles from "./LocalCostChart.module.css";
+  21 |  export default function LocalCostChart({ experiment, activeIterations = [] }) {[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:23:06 am[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "d3" from "src/visualizer/components/RadialTree.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Raj Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/src/visualizer/components/RadialTree.jsx[39m:18:20
+[33m  17 |  var _s = $RefreshSig$();
+  18 |  import { useRef, useEffect, useState, useCallback, useMemo } from "react";
+  19 |  import * as d3 from "d3";
+     |                       ^
+  20 |  import { computeRadialLayout, nodeRadius } from "../utils/treeLayout.js";
+  21 |  import styles from "./RadialTree.module.css";[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/Raj%20Shah/Downloads/Optimization_db/EPOS-Source-Code/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:23:06 am[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "d3" from "src/visualizer/utils/treeLayout.js". Does the file exist?
+[2m12:26:49 am[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33md3[32m[39m
+[2m12:26:49 am[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[2m12:42:25 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/visualizer/VisualizerCore.jsx[22m
+[2m1:07:58 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/components/ResultsPanel.jsx[22m
+[2m1:08:02 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[2m1:08:09 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[2m1:41:49 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/PlanViewer.jsx[22m
+[2m1:41:57 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/PlanViewer.jsx[22m
+[2m1:42:10 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.css[22m
+[2m1:53:08 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/visualizer/VisualizerApp.jsx[22m

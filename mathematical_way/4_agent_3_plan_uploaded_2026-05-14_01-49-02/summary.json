@@ -1,0 +1,12 @@
+{
+  "total_combinations": 36,
+  "best_gc": 0.8125,
+  "best_lc": 1.75,
+  "best_combo_label": "(2, 0, 0, 1)",
+  "best_combo_indices": "(2, 0, 0, 1)",
+  "mean_gc": 2.9606391059027777,
+  "min_lc": 1.0,
+  "max_lc": 2.5,
+  "n_agents": 4,
+  "success_rate": 100.0
+}

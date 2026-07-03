@@ -1,0 +1,70 @@
+.panel {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 24px;
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid var(--border-glass);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+.brandIcon {
+  font-size: 20px;
+  color: var(--accent);
+  filter: drop-shadow(0 0 6px var(--accent-glow));
+}
+.brandName {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+.brandSub {
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.controls {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  width: 1px;
+  height: 36px;
+  background: var(--border-glass);
+  align-self: center;
+  margin: 0 4px;
+}
+
+.gammaBadge {
+  display: flex;
+  flex-direction: column;
+}
+.gammaValue {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent-2);
+  padding: 4px 0;
+  line-height: 1.8;
+}

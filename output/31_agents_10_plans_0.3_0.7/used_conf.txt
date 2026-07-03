@@ -1,0 +1,29 @@
+CONFIGURATION:
+dataset = gaussian_full
+output = /Users/digantamandal/Desktop/EPOS/EPOSsrc/output/gaussian_full_1772707170
+==============
+numSimulations = 1
+dataset = gaussian_full
+numAgents = 31
+numPlans = 10
+planDim = 100
+numIterations = 40
+numChildren = 2
+--------------
+alpha = 0.3
+beta = 0.7
+global cost function = variance
+local cost function = index
+goal signal = null
+--------------
+permutationID = 0
+reorganizationSeed = 0
+permutationSeed = 0
+permutationFile = null
+reorganizationPeriod = 3
+memorizationOffset = 5
+reorganizationStrategy = NEVER
+convergenceTolerance = 0.5
+--------------
+loggingLevel = SEVERE
+Selected Loggers: SelectedPlanLogger, GlobalComplexCostLogger, HardConstraintLogger, GlobalResponseVectorLogger, PlanFrequencyLogger, TerminationLogger, GlobalCostLogger, VisualizerLogger, UnfairnessLogger, ReorganizationLogger, LocalCostMultiObjectiveLogger, WeightsLogger

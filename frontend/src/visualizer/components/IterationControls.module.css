@@ -1,0 +1,102 @@
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: var(--radius-md);
+}
+
+.playBtn {
+  font-size: 16px;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.stepBtn {
+  font-size: 20px;
+  padding: 0 10px;
+  height: 38px;
+  flex-shrink: 0;
+}
+.speedBtn {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0 10px;
+  height: 38px;
+  min-width: 42px;
+  flex-shrink: 0;
+  color: var(--accent-light);
+  border-color: rgba(124,93,250,0.3);
+}
+
+.sliderWrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sliderTrack {
+  position: relative;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  width: 100%;
+  height: 4px;
+  appearance: none;
+  background: var(--border-glass);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent-glow);
+  cursor: pointer;
+  transition: box-shadow var(--transition);
+}
+.slider::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 16px var(--accent-glow);
+}
+
+.keyDot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-2);
+  transform: translateX(-50%);
+  bottom: -1px;
+  z-index: 0;
+  opacity: 0.75;
+}
+
+.iterLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.iterNum {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.keyBadge {
+  font-size: 11px;
+  color: var(--accent-2);
+  background: rgba(79,209,197,0.1);
+  border: 1px solid rgba(79,209,197,0.2);
+  padding: 1px 7px;
+  border-radius: 20px;
+}
