@@ -110,4 +110,4 @@ If you run into issues during setup, please [open an issue](https://github.com/T
 
 ---
 
-<p align="center">Made with ❤️ by TDI-Lab</p>
+
