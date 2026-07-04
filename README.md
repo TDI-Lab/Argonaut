@@ -41,12 +41,12 @@ Download it directly from [github.com/TDI-Lab/Argonaut](https://github.com/TDI-L
 brew install openjdk@17 maven node python git && pip3 install numpy pandas matplotlib
 ```
 
-> **Step 3 — Make the quickstart script executable**
+> **Step 3 — Check for node modules**
 ```bash
 cd frontend && rm -rf node_modules package-lock.json && npm cache clean --force && npm install
 ```
 
-> **Step 4 — Run it**
+> **Step 4 — Make the quickstart script executable and run it**
 ```bash
 cd .. && chmod +x quickstart.sh && ./quickstart.sh
 ```
