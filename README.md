@@ -43,12 +43,12 @@ brew install openjdk@17 maven node python git && pip3 install numpy pandas matpl
 
 > **Step 3 — Make the quickstart script executable**
 ```bash
-chmod +x quickstart.sh
+cd frontend && rm -rf node_modules package-lock.json && npm cache clean --force && npm install
 ```
 
 > **Step 4 — Run it**
 ```bash
-./quickstart.sh
+cd .. && chmod +x quickstart.sh && ./quickstart.sh
 ```
 
 ---
